@@ -21,6 +21,11 @@ const useStyles = makeStyles((theme) => ({
   button: {
     display: "table",
     margin: "0 auto",
+    width: "25%",
+    paddingTop: "2%",
+  },
+  buttonMargin: {
+    margin: "1%",
   },
 }));
 export default function Home() {
@@ -35,6 +40,7 @@ export default function Home() {
           to="/movies"
           variant="contained"
           color="primary"
+          className={classes.buttonMargin}
         >
           {" "}
           Movies
@@ -44,6 +50,7 @@ export default function Home() {
           to="/people"
           variant="contained"
           color="primary"
+          className={classes.buttonMargin}
         >
           {" "}
           People
@@ -53,6 +60,7 @@ export default function Home() {
           to="/planets"
           variant="contained"
           color="primary"
+          className={classes.buttonMargin}
         >
           {" "}
           Planets
